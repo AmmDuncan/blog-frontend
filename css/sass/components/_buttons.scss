@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5rem;
+  box-shadow: 0 1rem 1rem -0.5rem rgba($color-primary-dark, 0.25),
+    0 0.25rem 1rem rgba($color-primary-dark, 0.15);
+  transition: 0.1s ease-out;
+
+  &-primary {
+    background-color: $color-primary;
+    color: #ffffff;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 1.2rem 1rem -0.8rem rgba($color-primary-dark, 0.3),
+      0 0.25rem 1.5rem rgba($color-primary-dark, 0.1);
+    background: rgba($color-primary, 0.9);
+  }
+
+  &:active {
+    transform: scale(0.997);
+    box-shadow: 0 1rem 0.75rem -0.8rem rgba($color-primary-dark, 0.3);
+    background: rgba($color-primary, 1);
+  }
+}
+
+.shift__btn {
+  // border: 1px solid $color-text-lighter;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 0.5rem rgba($color-primary-dark, 0.15);
+  padding: 1rem;
+  font-size: $font-size-body-larger;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
