@@ -627,11 +627,6 @@ h2 {
   color: #fff;
   background-color: #1fa5d6;
 }
-@media screen and (max-width: 672px) {
-  .latest-content .articles .article {
-    width: 18rem;
-  }
-}
 .latest-content .articles .read-more-btn {
   min-width: 7rem;
   scroll-snap-align: start;
