@@ -543,7 +543,7 @@ h2 {
   column-gap: 1rem;
   overflow: auto;
   overflow-x: scroll;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
   scroll-padding: 0 1rem;
   scrollbar-width: thin;
 }
@@ -628,7 +628,7 @@ h2 {
 }
 .latest-content .articles .read-more-btn {
   min-width: 7rem;
-  scroll-snap-align: end;
+  scroll-snap-align: start;
   margin-left: 1.5rem;
   padding: 1rem;
   border: 1px solid rgba(31, 165, 214, 0.6);
@@ -648,6 +648,11 @@ h2 {
   }
   .latest-content .articles .article .text .additional > *:nth-child(2) {
     display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+  .latest-content .articles {
+    scroll-snap-type: x mandatory;
   }
 }
 .latest .shift__btn {

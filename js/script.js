@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   shiftLeft.addEventListener("click", function () {
     latestArticles.scrollTo({
-      left: latestArticles.scrollLeft - 0.8 * window.innerWidth,
+      left:
+        latestArticles.scrollLeft -
+        (window.innerWidth > 672 ? 0.8 * window.innerWidth : 336),
       behavior: "smooth",
     });
     // latestArticles.scrollLeft -= window.innerWidth;
@@ -36,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     latestArticles.scrollTo({
       left:
         latestArticles.scrollLeft +
-        (window.innerWidth > 640 ? 0.85 : 0.95) * window.innerWidth,
+        (window.innerWidth > 672 ? 0.8 * window.innerWidth : 336),
       behavior: "smooth",
     });
   });
