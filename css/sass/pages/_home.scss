@@ -387,6 +387,10 @@
             }
           }
         }
+
+        @media screen and (max-width: 672px) {
+          width: 18rem;
+        }
       }
 
       .read-more-btn {
