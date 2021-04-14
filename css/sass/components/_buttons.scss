@@ -27,9 +27,13 @@
 
 .shift__btn {
   // border: 1px solid $color-text-lighter;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   box-shadow: 0 0.5rem 0.5rem rgba($color-primary-dark, 0.15);
-  padding: 1rem;
   font-size: $font-size-body-larger;
   background: #fff;
   cursor: pointer;

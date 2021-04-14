@@ -6,7 +6,7 @@ const shiftRight = document.querySelector(".shift__btn--right");
 
 const displayAppropriateBtns = () => {
   if (latestArticles.scrollLeft > 0) {
-    shiftLeft.style.display = "block";
+    shiftLeft.style.display = "flex";
   } else {
     shiftLeft.style.display = "none";
   }
@@ -16,7 +16,7 @@ const displayAppropriateBtns = () => {
   ) {
     shiftRight.style.display = "none";
   } else {
-    shiftRight.style.display = "block";
+    shiftRight.style.display = "flex";
   }
 };
 
