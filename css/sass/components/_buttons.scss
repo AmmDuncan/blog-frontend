@@ -39,6 +39,10 @@
   cursor: pointer;
   transition: 0.1s ease-out;
 
+  span {
+    line-height: 0;
+  }
+
   &:hover {
     transform: scale(1.05);
   }

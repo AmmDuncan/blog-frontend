@@ -212,6 +212,9 @@ h2 {
   cursor: pointer;
   transition: 0.1s ease-out;
 }
+.shift__btn span {
+  line-height: 0;
+}
 .shift__btn:hover {
   transform: scale(1.05);
 }
