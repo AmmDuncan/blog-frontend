@@ -397,16 +397,16 @@ h2 {
 .featured-content .articles .article .text .body {
   display: none;
 }
-.featured-content .articles .article:hover .img img {
+.featured-content .articles .article:hover .img img, .featured-content .articles .article:active .img img {
   transform: scale(1.03);
 }
-.featured-content .articles .article:hover .text {
+.featured-content .articles .article:hover .text, .featured-content .articles .article:active .text {
   width: 100%;
   box-sizing: border-box;
   color: #fff;
   background: rgba(31, 165, 214, 0.6);
 }
-.featured-content .articles .article:hover .text .category {
+.featured-content .articles .article:hover .text .category, .featured-content .articles .article:active .text .category {
   display: inline-block;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   margin-left: 0rem;

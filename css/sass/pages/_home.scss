@@ -95,7 +95,8 @@
           }
         }
 
-        &:hover {
+        &:hover,
+        &:active {
           .img {
             img {
               transform: scale(1.03);
