@@ -10,12 +10,25 @@ const displayAppropriateBtns = () => {
   } else {
     shiftLeft.style.display = "none";
   }
-  if (latestArticles.scrollLeft >= latestArticles.scrollLeftMax - 40) {
+  if (
+    latestArticles.scrollLeft >=
+    getLatestArticlesWidth() - window.innerWidth
+  ) {
     shiftRight.style.display = "none";
   } else {
     shiftRight.style.display = "block";
   }
 };
+
+function getLatestArticlesWidth() {
+  const children = document.querySelectorAll(".latest-content .articles>*");
+  let width = 224;
+  children.forEach((child) => {
+    width += child.getBoundingClientRect().width;
+  });
+
+  return width;
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   displayAppropriateBtns();
