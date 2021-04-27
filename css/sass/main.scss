@@ -6,11 +6,13 @@
 @import "base/reset";
 @import "base/typography";
 
+// pages
+@import "pages/home";
+
 // components
 @import "components/buttons";
+@import "components/article-card";
 
 // layout
 @import "layout/nav";
 
-// pages
-@import "pages/home";
