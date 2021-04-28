@@ -343,7 +343,7 @@ h2 {
 @media screen and (max-width: 640px) {
   .featured-content .articles {
     grid-template-columns: repeat(5, 100%);
-    grid-template-rows: 17rem;
+    grid-template-rows: 15rem;
     grid-auto-flow: column;
     overflow: scroll;
     scrollbar-width: none;
@@ -355,7 +355,7 @@ h2 {
   }
   .featured-content .articles .article-one {
     grid-column: 1/2;
-    grid-template-rows: 17rem;
+    grid-template-rows: 15rem;
   }
   .featured-content .articles .article-one .body {
     display: none;
@@ -368,6 +368,11 @@ h2 {
   .featured-content .articles .article-one .article .img::after {
     background-image: linear-gradient(to top, rgba(16, 16, 16, 0.7) 10%, rgba(16, 16, 16, 0.5) 60%, transparent 100%);
   }
+  .featured-content .articles .article-one .article .text .category {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 0;
+    border-radius: 4px;
+  }
   .featured-content .articles .article-one .article:hover .text {
     background: transparent;
   }
@@ -375,6 +380,11 @@ h2 {
     grid-column: span 1;
     grid-row: 1/2;
     box-shadow: 0 3rem 1.25rem -2rem rgba(3, 47, 75, 0.2);
+  }
+  .featured-content .articles .article:not(:nth-child(1)) .text .category {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 0;
+    border-radius: 4px;
   }
   .featured-content .articles .article:not(:nth-child(1)):hover .img::after {
     background-image: linear-gradient(to top, rgba(16, 16, 16, 0.7) 10%, rgba(16, 16, 16, 0.5) 60%, transparent 100%);
@@ -384,8 +394,6 @@ h2 {
   }
   .featured-content .articles .article:hover .text .category {
     background: #1fa5d6;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    margin-left: 0;
     color: #fff;
   }
 }
@@ -602,6 +610,16 @@ h2 {
 @media screen and (max-width: 640px) {
   .latest-content .articles {
     scroll-snap-type: x mandatory;
+    min-height: 17rem;
+  }
+  .latest-content .articles .article {
+    grid-template-rows: 8rem minmax(5rem, auto);
+    width: 14rem;
+    box-shadow: 0 1.25rem 1.75rem -0.8rem rgba(3, 47, 75, 0.2);
+  }
+  .latest-content .articles .article .img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 .latest .shift__btn {
@@ -621,6 +639,11 @@ h2 {
 }
 .latest .shift__btn:hover {
   transform: scale(1.05) translateY(-46%);
+}
+@media screen and (max-width: 640px) {
+  .latest .shift__btn {
+    display: none;
+  }
 }
 
 .btn {

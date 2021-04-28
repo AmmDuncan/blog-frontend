@@ -8,14 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
         const startingPoint = this.getBoundingClientRect().left
         const fullWidth = this.getBoundingClientRect().width
         featured_article_items.forEach((item, index) => {
-            let itemLeft = item.getBoundingClientRect().left
-            if(itemLeft >= startingPoint
-               && itemLeft < startingPoint + .5 * fullWidth) {
-                featured_slider_items.forEach(button => {
-                    button.classList.remove('active')
-                })
-                featured_slider_items[index].classList.add('active')
+            function getAndCheck() {
+                let itemLeft = item.getBoundingClientRect().left
+                if(itemLeft >= startingPoint
+                   && itemLeft < startingPoint + .5 * fullWidth) {
+                    featured_slider_items.forEach(button => {
+                        button.classList.remove('active')
+                    })
+                    featured_slider_items[index].classList.add('active')
+                }
             }
+            setTimeout(getAndCheck, 100)
         })
     })
 })

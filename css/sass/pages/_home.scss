@@ -209,7 +209,7 @@
 
       @media screen and (max-width: 640px) {
         grid-template-columns: repeat(5, 100%);
-        grid-template-rows: 17rem;
+        grid-template-rows: 15rem;
         grid-auto-flow: column;
         //grid-template-rows: repeat(6, 11rem);
         overflow: scroll;
@@ -224,7 +224,7 @@
 
         .article-one {
           grid-column: 1/2;
-          grid-template-rows: 17rem;
+          grid-template-rows: 15rem;
 
           .body {
             display: none;
@@ -244,6 +244,15 @@
                                   transparent 100%)
                 }
               }
+
+      .text {
+        .category {
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            margin-left: 0;
+            border-radius: 4px;
+        }
+      }
+
               &:hover {
                 .text {
                   background: transparent;
@@ -256,6 +265,14 @@
           grid-column: span 1;
           grid-row: 1/2;
           box-shadow: 0 3rem 1.25rem -2rem rgba($color-primary-dark, .2);
+
+          .text {
+            .category {
+                padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                margin-left: 0;
+                border-radius: 4px;
+            }
+          }
 
           &:hover {
             .img {
@@ -278,8 +295,6 @@
             .text {
               .category {
                 background: $color-primary;
-                padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-                margin-left: 0;
                 color: #fff;
               }
             }
@@ -564,6 +579,17 @@
 
       @media screen and (max-width: 640px) {
         scroll-snap-type: x mandatory;
+        min-height: 17rem;
+        .article {
+          grid-template-rows: 8rem minmax(5rem, auto);
+          width: 14rem; box-shadow: 0 1.25rem 1.75rem -0.8rem rgba($color-primary-dark, 0.2);
+          // transform: scale(1.02);
+
+          .img {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+        }
       }
     }
   }
@@ -588,5 +614,9 @@
     &:hover {
       transform: scale(1.05) translateY(-46%);
     }
+
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
   }
 }

@@ -31,28 +31,32 @@ function getLatestArticlesWidth() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  if (window.innerWidth > 640) {
+
   displayAppropriateBtns();
 
   latestArticles.addEventListener("scroll", function () {
     displayAppropriateBtns();
   });
 
-  shiftLeft.addEventListener("click", function () {
-    latestArticles.scrollTo({
-      left:
-        latestArticles.scrollLeft -
-        (window.innerWidth > 671 ? 0.8 * window.innerWidth : 344),
-      behavior: "smooth",
+    shiftLeft.addEventListener("click", function () {
+      latestArticles.scrollTo({
+        left:
+            latestArticles.scrollLeft -
+            (window.innerWidth > 671 ? 0.8 * window.innerWidth : 344),
+        behavior: "smooth",
+      });
+      // latestArticles.scrollLeft -= window.innerWidth;
     });
-    // latestArticles.scrollLeft -= window.innerWidth;
-  });
 
-  shiftRight.addEventListener("click", function () {
-    latestArticles.scrollTo({
-      left:
-        latestArticles.scrollLeft +
-        (window.innerWidth > 671 ? 0.8 * window.innerWidth : 344),
-      behavior: "smooth",
+    shiftRight.addEventListener("click", function () {
+      latestArticles.scrollTo({
+        left:
+            latestArticles.scrollLeft +
+            (window.innerWidth > 671 ? 0.8 * window.innerWidth : 344),
+        behavior: "smooth",
+      });
     });
-  });
+  }
 });
