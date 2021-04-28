@@ -219,6 +219,7 @@
         &::-webkit-scrollbar {
           //width: 8px; /* width of the entire scrollbar */
           height: 0px;
+          display: none;
         }
 
         .article-one {

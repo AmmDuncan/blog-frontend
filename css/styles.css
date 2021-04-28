@@ -351,6 +351,7 @@ h2 {
   }
   .featured-content .articles::-webkit-scrollbar {
     height: 0px;
+    display: none;
   }
   .featured-content .articles .article-one {
     grid-column: 1/2;
