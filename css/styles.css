@@ -383,6 +383,8 @@ h2 {
   }
   .featured-content .articles .article:hover .text .category {
     background: #1fa5d6;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-left: 0;
     color: #fff;
   }
 }

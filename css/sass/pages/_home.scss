@@ -277,6 +277,8 @@
             .text {
               .category {
                 background: $color-primary;
+                padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+                margin-left: 0;
                 color: #fff;
               }
             }
@@ -288,6 +290,7 @@
 
     @media screen and (max-width: 640px) {
       position: relative;
+
         .controller {
           display: flex;
           width: 50%;
