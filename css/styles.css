@@ -175,8 +175,9 @@ h1,
 h2 {
   font-size: 1.953rem;
   font-weight: 700;
+  font-size: 1.563rem;
+  font-weight: 500;
 }
-
 .section {
   width: 100%;
   padding: 2rem 0;
@@ -550,11 +551,13 @@ h2 {
   -webkit-line-clamp: 2;
   color: #424f55;
   transition: 0.1s ease-out;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
 }
 .latest-content .articles .article .text .category {
   margin-left: 0;
   margin-top: 0.8rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem;
   border-radius: 4px;
   color: #1fa5d6;
@@ -609,6 +612,7 @@ h2 {
 }
 @media screen and (max-width: 640px) {
   .latest-content .articles {
+    padding-bottom: 4rem;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 1rem;
     min-height: 17rem;
