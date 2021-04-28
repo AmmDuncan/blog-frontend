@@ -582,8 +582,9 @@
       @media screen and (max-width: 640px) {
         padding-bottom: 4rem;
         scroll-snap-type: x mandatory;
-        scroll-padding: 0 1rem;
+        scroll-padding: 0 .5rem;
         min-height: 17rem;
+
         .article {
           grid-template-rows: 8rem minmax(5rem, auto);
           width: 14rem; box-shadow: 0 1.15rem 1.75rem -0.8rem rgba($color-primary-dark, 0.2);

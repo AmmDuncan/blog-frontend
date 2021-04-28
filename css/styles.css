@@ -614,7 +614,7 @@ h2 {
   .latest-content .articles {
     padding-bottom: 4rem;
     scroll-snap-type: x mandatory;
-    scroll-padding: 0 1rem;
+    scroll-padding: 0 0.5rem;
     min-height: 17rem;
   }
   .latest-content .articles .article {
