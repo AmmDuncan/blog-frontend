@@ -616,7 +616,7 @@ h2 {
   .latest-content .articles .article {
     grid-template-rows: 8rem minmax(5rem, auto);
     width: 14rem;
-    box-shadow: 0 1.25rem 1.75rem -0.8rem rgba(3, 47, 75, 0.2);
+    box-shadow: 0 1.15rem 1.75rem -0.8rem rgba(3, 47, 75, 0.2);
   }
   .latest-content .articles .article .img {
     border-bottom-left-radius: 0;
