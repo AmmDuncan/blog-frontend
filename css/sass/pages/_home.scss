@@ -462,6 +462,8 @@
         transition: 0.1s ease-out;
         width: 21rem;
         scroll-snap-align: start;
+        box-shadow: 0 1.5rem 1.5rem -1rem rgba($color-primary-dark, .15),
+                    0 .5rem .75rem rgba($color-primary-dark, .1);
 
         &:last-child {
           margin-right: 3rem;
@@ -472,8 +474,8 @@
           overflow: hidden;
           position: relative;
           transition: 0.2s ease-out;
-          border-bottom-left-radius: .5rem;
-          border-bottom-right-radius: .5rem;
+          //border-bottom-left-radius: .5rem;
+          //border-bottom-right-radius: .5rem;
 
           img {
             height: 100%;

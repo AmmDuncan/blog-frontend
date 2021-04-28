@@ -527,6 +527,7 @@ h2 {
   transition: 0.1s ease-out;
   width: 21rem;
   scroll-snap-align: start;
+  box-shadow: 0 1.5rem 1.5rem -1rem rgba(3, 47, 75, 0.15), 0 0.5rem 0.75rem rgba(3, 47, 75, 0.1);
 }
 .latest-content .articles .article:last-child {
   margin-right: 3rem;
@@ -536,8 +537,6 @@ h2 {
   overflow: hidden;
   position: relative;
   transition: 0.2s ease-out;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }
 .latest-content .articles .article .img img {
   height: 100%;
