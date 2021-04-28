@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
 
-                setTimeout(getAndCheck, 150)
+                getAndCheck()
             })
-        }, 100)
+        }, 300)
     })
 
 })
