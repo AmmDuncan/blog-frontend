@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     featured_slider_items[index].classList.add('active')
                 }
             }
-            setTimeout(getAndCheck, 100)
+            setTimeout(getAndCheck, 200)
         })
     })
 })
