@@ -176,7 +176,7 @@ h2 {
   font-size: 1.953rem;
   font-weight: 700;
   font-size: 1.563rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .section {
   width: 100%;
@@ -551,7 +551,6 @@ h2 {
   -webkit-line-clamp: 2;
   color: #424f55;
   transition: 0.1s ease-out;
-  font-weight: 400;
   margin-bottom: 0.5rem;
 }
 .latest-content .articles .article .text .category {
