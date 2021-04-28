@@ -579,6 +579,7 @@
 
       @media screen and (max-width: 640px) {
         scroll-snap-type: x mandatory;
+        scroll-padding: 0 1rem;
         min-height: 17rem;
         .article {
           grid-template-rows: 8rem minmax(5rem, auto);
