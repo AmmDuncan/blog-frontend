@@ -611,7 +611,7 @@ h2 {
 }
 @media screen and (max-width: 640px) {
   .latest-content .articles {
-    padding-bottom: 4rem;
+    padding-bottom: 2.75rem;
     scroll-snap-type: x mandatory;
     scroll-padding: 0 0.5rem;
     min-height: 17rem;
